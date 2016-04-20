@@ -1,0 +1,78 @@
+<pre class='metadata'>
+Title: My New API
+Repository: your-username/your-proposal
+Shortname: your-proposal
+Status: ED
+ED: https://your-username.github.io/your-proposal/
+Level: 1
+Editor: See contributors on GitHub, , https://github.com/your-username/your-proposal/graphs/contributors
+Group: wicg
+Abstract: The abstract is a 1-2 sentence description of what the spec is about.
+Abstract: The abstract can have multiple lines.
+Markup Shorthands: css no, markdown yes
+</pre>
+
+<!-- Custom references go here.
+     https://github.com/tabatkins/bikeshed/blob/master/docs/definitions-autolinks.md#bibliography
+-->
+<pre class=biblio>
+{
+  "bikeshed": {
+    "href": "https://github.com/tabatkins/bikeshed/",
+    "title": "Bikeshed, a spec preprocessor"
+  }
+}
+</pre>
+
+<!-- Define definitions here if they aren't in the global reference database.
+     https://github.com/tabatkins/bikeshed/blob/master/docs/definitions-autolinks.md#providing-custom-definitions
+-->
+<pre class="anchors">
+spec: bikeshed; urlPrefix: https://github.com/tabatkins/bikeshed/
+    type: dfn
+        text: Bikeshed; url: #
+        text: install Bikeshed; url: blob/master/docs/install.md#
+</pre>
+<!-- Tell Bikeshed to use non-exported definitions using this section.
+     https://github.com/tabatkins/bikeshed/blob/master/docs/definitions-autolinks.md#configuring-linking-defaults
+-->
+<pre class="link-defaults">
+spec: html
+    type: dfn
+        text: in parallel
+</pre>
+
+<style>
+ /* Show self-links for various elements. This is incompatible with nearby floats. */
+ .note, .why, .example, .issue { overflow: inherit; }
+</style>
+
+<section class="non-normative">
+  <h2 id="introduction">Introduction</h2>
+
+  <em>This section is non-normative.</em>
+
+  <p>
+    This "specification" demonstrates a basic <a>Bikeshed</a> document.
+  </p>
+
+  <section>
+    <h3 id="introduction-examples">Examples</h3>
+
+    <div class="example" id="example-building-the-spec">
+      <p>
+        To build the specification, first <a>install Bikeshed</a>.
+        Then, to keep your spec up to date while you're editing it,
+        run the following command in a terminal.
+      </p>
+      <pre highlight="shell">
+        $ bikeshed watch
+      </pre>
+      <p>
+        Then when you save `index.bs`,
+        it'll automatically build `index.html`,
+        and you can just hit reload in your browser.
+      </p>
+    </div>
+  </section>
+</section>
